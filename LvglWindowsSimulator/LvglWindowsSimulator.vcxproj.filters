@@ -932,6 +932,23 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClInclude>
     <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="..\..\lib\cJSON\cJSON.h">
+      <Filter>cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\cJSON\cJSON_Utils.h">
+      <Filter>cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Application.h" />
+    <ClInclude Include="..\..\Callback.h" />
+    <ClInclude Include="..\..\HomeUI.h" />
+    <ClInclude Include="..\..\includes.h" />
+    <ClInclude Include="..\..\lv_conf.h" />
+    <ClInclude Include="..\..\LvglUI.h" />
+    <ClInclude Include="..\..\Queue.h" />
+    <ClInclude Include="..\..\support.h" />
+    <ClInclude Include="..\..\TrelloApi.h" />
+    <ClInclude Include="..\..\lvgl_events.h" />
+    <ClInclude Include="..\..\Tasks.h" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -2810,6 +2827,24 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClCompile>
     <ClCompile Include="LvglWindowsSimulator.cpp" />
+    <ClCompile Include="..\..\lib\cJSON\cJSON.c">
+      <Filter>cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\cJSON\cJSON_Utils.c">
+      <Filter>cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lv_font_roboto_40.c" />
+    <ClCompile Include="..\..\mouse_cursor_icon.c" />
+    <ClCompile Include="..\..\Application.cpp" />
+    <ClCompile Include="..\..\HomeUI.cpp" />
+    <ClCompile Include="..\..\LvglUI.cpp" />
+    <ClCompile Include="..\..\Queue.cpp" />
+    <ClCompile Include="..\..\support.cpp" />
+    <ClCompile Include="..\..\TrelloApi.cpp" />
+    <ClCompile Include="..\..\lv_font_roboto_14.c" />
+    <ClCompile Include="..\..\lv_font_roboto_18.c" />
+    <ClCompile Include="..\..\lvgl_events.cpp" />
+    <ClCompile Include="..\..\Tasks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\freetype\.clang-format">
@@ -9657,6 +9692,9 @@
     </Filter>
     <Filter Include="lvgl\tests\unity">
       <UniqueIdentifier>{af11e446-4327-4ea3-b902-d666489463b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cJSON">
+      <UniqueIdentifier>{4266539f-ae78-4e2e-8075-68141f05a878}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

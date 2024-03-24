@@ -6,6 +6,12 @@
 #include "lvgl/examples/lv_examples.h"
 #include "lvgl/demos/lv_demos.h"
 
+#include "includes.h"
+
+#include "Application.h"
+#include "Device.h"
+#include "Queue.h"
+
 int main()
 {
     lv_init();
@@ -66,11 +72,25 @@ int main()
         return -1;
     }
 
-    lv_demo_widgets();
+    //lv_demo_widgets();
     //lv_demo_benchmark();
+
+    _putenv("CURL_CA_BUNDLE=../Output/Binaries/Debug/x64/curl-ca-bundle.crt");
+
+    Application application;
+
+    application.begin();
+
+    if (false) {
+        lv_demo_widgets();
+        lv_demo_widgets_start_slideshow();
+    }
+
 
     while (1)
     {
+        application.process();
+
         uint32_t time_till_next = lv_timer_handler();
         Sleep(time_till_next);
     }
