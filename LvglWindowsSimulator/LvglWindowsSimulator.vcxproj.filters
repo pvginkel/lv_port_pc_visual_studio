@@ -949,6 +949,7 @@
     <ClInclude Include="..\..\TrelloApi.h" />
     <ClInclude Include="..\..\lvgl_events.h" />
     <ClInclude Include="..\..\Tasks.h" />
+    <ClInclude Include="..\..\Messages.h" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
