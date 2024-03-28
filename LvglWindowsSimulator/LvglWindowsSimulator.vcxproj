@@ -380,6 +380,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="..\..\MarkdownTestUI.h" />
     <ClInclude Include="..\..\Messages.h" />
     <ClInclude Include="..\..\Queue.h" />
+    <ClInclude Include="..\..\RefCounted.h" />
     <ClInclude Include="..\..\result.h" />
     <ClInclude Include="..\..\support.h" />
     <ClInclude Include="..\..\Tasks.h" />
@@ -1036,7 +1037,6 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\..\lib\cJSON\cJSON_Utils.c" />
     <ClCompile Include="..\..\LvglUI.cpp" />
     <ClCompile Include="..\..\lvgl_events.cpp" />
-    <ClCompile Include="..\..\lv_font_icons_18.c" />
     <ClCompile Include="..\..\lv_font_mono_16.c" />
     <ClCompile Include="..\..\lv_font_sans_18.c" />
     <ClCompile Include="..\..\lv_font_sans_18_bold.c" />

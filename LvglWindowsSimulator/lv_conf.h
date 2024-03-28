@@ -656,7 +656,7 @@
 #define LV_BIN_DECODER_RAM_LOAD 0
 
 /*RLE decompress library*/
-#define LV_USE_RLE 0
+#define LV_USE_RLE 1
 
 /*QR code library*/
 #define LV_USE_QRCODE 0

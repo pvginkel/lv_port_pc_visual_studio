@@ -1000,6 +1000,7 @@
     <ClInclude Include="..\..\MarkdownRenderer.h" />
     <ClInclude Include="..\..\MarkdownTestUI.h" />
     <ClInclude Include="..\..\fonts.h" />
+    <ClInclude Include="..\..\RefCounted.h" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -2950,7 +2951,6 @@
     </ClCompile>
     <ClCompile Include="..\..\MarkdownRenderer.cpp" />
     <ClCompile Include="..\..\MarkdownTestUI.cpp" />
-    <ClCompile Include="..\..\lv_font_icons_18.c" />
     <ClCompile Include="..\..\lv_font_sans_18.c" />
     <ClCompile Include="..\..\lv_font_sans_18_bold.c" />
     <ClCompile Include="..\..\lv_font_sans_18_bold_italic.c" />
