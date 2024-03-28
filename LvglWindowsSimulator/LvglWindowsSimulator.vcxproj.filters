@@ -950,6 +950,56 @@
     <ClInclude Include="..\..\lvgl_events.h" />
     <ClInclude Include="..\..\Tasks.h" />
     <ClInclude Include="..\..\Messages.h" />
+    <ClInclude Include="..\..\result.h" />
+    <ClInclude Include="..\..\CardUI.h" />
+    <ClInclude Include="..\cmark\src\buffer.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\chunk.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\cmark.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\cmark_ctype.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\houdini.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\inlines.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\iterator.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\node.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\parser.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\references.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\render.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\scanners.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\src\utf8.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\build\src\cmark_export.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmark\build\src\cmark_version.h">
+      <Filter>cmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MarkdownRenderer.h" />
+    <ClInclude Include="..\..\MarkdownTestUI.h" />
+    <ClInclude Include="..\..\fonts.h" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -2834,7 +2884,6 @@
     <ClCompile Include="..\..\lib\cJSON\cJSON_Utils.c">
       <Filter>cJSON</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lv_font_roboto_40.c" />
     <ClCompile Include="..\..\mouse_cursor_icon.c" />
     <ClCompile Include="..\..\Application.cpp" />
     <ClCompile Include="..\..\HomeUI.cpp" />
@@ -2842,10 +2891,74 @@
     <ClCompile Include="..\..\Queue.cpp" />
     <ClCompile Include="..\..\support.cpp" />
     <ClCompile Include="..\..\TrelloApi.cpp" />
-    <ClCompile Include="..\..\lv_font_roboto_14.c" />
-    <ClCompile Include="..\..\lv_font_roboto_18.c" />
     <ClCompile Include="..\..\lvgl_events.cpp" />
     <ClCompile Include="..\..\Tasks.cpp" />
+    <ClCompile Include="..\..\CardUI.cpp" />
+    <ClCompile Include="..\cmark\src\blocks.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\buffer.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\cmark.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\cmark_ctype.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\commonmark.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\houdini_href_e.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\houdini_html_e.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\houdini_html_u.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\html.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\inlines.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\iterator.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\latex.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\node.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\references.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\render.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\scanners.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\utf8.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmark\src\xml.c">
+      <Filter>cmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MarkdownRenderer.cpp" />
+    <ClCompile Include="..\..\MarkdownTestUI.cpp" />
+    <ClCompile Include="..\..\lv_font_icons_18.c" />
+    <ClCompile Include="..\..\lv_font_sans_18.c" />
+    <ClCompile Include="..\..\lv_font_sans_18_bold.c" />
+    <ClCompile Include="..\..\lv_font_sans_18_bold_italic.c" />
+    <ClCompile Include="..\..\lv_font_sans_18_italic.c" />
+    <ClCompile Include="..\..\lv_font_sans_22_bold.c" />
+    <ClCompile Include="..\..\lv_font_sans_30_bold.c" />
+    <ClCompile Include="..\..\lv_font_sans_38_bold.c" />
+    <ClCompile Include="..\..\lv_font_mono_16.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\freetype\.clang-format">
@@ -9696,6 +9809,9 @@
     </Filter>
     <Filter Include="cJSON">
       <UniqueIdentifier>{4266539f-ae78-4e2e-8075-68141f05a878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmark">
+      <UniqueIdentifier>{fef3a10e-7c56-44f0-a0d1-24d0574e2571}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
