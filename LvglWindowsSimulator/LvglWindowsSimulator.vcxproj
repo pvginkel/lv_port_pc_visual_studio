@@ -1048,6 +1048,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\..\..\src\lv_font_sans_34_bold.c" />
     <ClCompile Include="..\..\..\src\lv_font_sans_40_bold.c" />
     <ClCompile Include="..\..\..\src\lv_font_sans_50_bold.c" />
+    <ClCompile Include="..\..\..\src\lv_font_symbols.c" />
     <ClCompile Include="..\..\..\src\main.cpp" />
     <ClCompile Include="..\..\..\src\MarkdownRenderer.cpp" />
     <ClCompile Include="..\..\..\src\MarkdownTestUI.cpp" />

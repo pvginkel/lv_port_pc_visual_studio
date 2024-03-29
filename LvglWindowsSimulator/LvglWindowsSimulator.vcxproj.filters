@@ -3047,6 +3047,9 @@
     <ClCompile Include="..\..\..\src\TrelloApi.cpp">
       <Filter>KitchenDisplay</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_symbols.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\freetype\.clang-format">

@@ -10,8 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{2B01BD7E-5831-401E-998A-F2ED26C34FB3}"
 	ProjectSection(SolutionItems) = preProject
 		..\tools\generate-fonts.bat = ..\tools\generate-fonts.bat
-		..\tools\generate-fonts.json = ..\tools\generate-fonts.json
 		..\tools\generate-fonts.ts = ..\tools\generate-fonts.ts
+		..\generate-fonts.yaml = ..\generate-fonts.yaml
 	EndProjectSection
 EndProject
 Global
