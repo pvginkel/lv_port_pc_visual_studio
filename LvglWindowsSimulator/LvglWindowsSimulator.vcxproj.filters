@@ -932,26 +932,6 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClInclude>
     <ClInclude Include="lv_conf.h" />
-    <ClInclude Include="..\..\lib\cJSON\cJSON.h">
-      <Filter>cJSON</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\lib\cJSON\cJSON_Utils.h">
-      <Filter>cJSON</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Application.h" />
-    <ClInclude Include="..\..\Callback.h" />
-    <ClInclude Include="..\..\HomeUI.h" />
-    <ClInclude Include="..\..\includes.h" />
-    <ClInclude Include="..\..\lv_conf.h" />
-    <ClInclude Include="..\..\LvglUI.h" />
-    <ClInclude Include="..\..\Queue.h" />
-    <ClInclude Include="..\..\support.h" />
-    <ClInclude Include="..\..\TrelloApi.h" />
-    <ClInclude Include="..\..\lvgl_events.h" />
-    <ClInclude Include="..\..\Tasks.h" />
-    <ClInclude Include="..\..\Messages.h" />
-    <ClInclude Include="..\..\result.h" />
-    <ClInclude Include="..\..\CardUI.h" />
     <ClInclude Include="..\cmark\src\buffer.h">
       <Filter>cmark</Filter>
     </ClInclude>
@@ -997,10 +977,72 @@
     <ClInclude Include="..\cmark\build\src\cmark_version.h">
       <Filter>cmark</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\MarkdownRenderer.h" />
-    <ClInclude Include="..\..\MarkdownTestUI.h" />
-    <ClInclude Include="..\..\fonts.h" />
-    <ClInclude Include="..\..\RefCounted.h" />
+    <ClInclude Include="..\..\..\lib\cJSON\cJSON.h">
+      <Filter>cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\cJSON\cJSON_Utils.h">
+      <Filter>cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Application.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Callback.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\CardUI.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Device.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\fonts.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\HomeUI.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\includes.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\lv_conf.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\lvgl_events.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\LvglUI.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\MarkdownRenderer.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\MarkdownTestUI.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Messages.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Queue.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\RefCounted.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\result.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\settings.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\support.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Tasks.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\TrelloApi.h">
+      <Filter>KitchenDisplay</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -2879,22 +2921,6 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClCompile>
     <ClCompile Include="LvglWindowsSimulator.cpp" />
-    <ClCompile Include="..\..\lib\cJSON\cJSON.c">
-      <Filter>cJSON</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\cJSON\cJSON_Utils.c">
-      <Filter>cJSON</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\mouse_cursor_icon.c" />
-    <ClCompile Include="..\..\Application.cpp" />
-    <ClCompile Include="..\..\HomeUI.cpp" />
-    <ClCompile Include="..\..\LvglUI.cpp" />
-    <ClCompile Include="..\..\Queue.cpp" />
-    <ClCompile Include="..\..\support.cpp" />
-    <ClCompile Include="..\..\TrelloApi.cpp" />
-    <ClCompile Include="..\..\lvgl_events.cpp" />
-    <ClCompile Include="..\..\Tasks.cpp" />
-    <ClCompile Include="..\..\CardUI.cpp" />
     <ClCompile Include="..\cmark\src\blocks.c">
       <Filter>cmark</Filter>
     </ClCompile>
@@ -2949,16 +2975,78 @@
     <ClCompile Include="..\cmark\src\xml.c">
       <Filter>cmark</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\MarkdownRenderer.cpp" />
-    <ClCompile Include="..\..\MarkdownTestUI.cpp" />
-    <ClCompile Include="..\..\lv_font_sans_18.c" />
-    <ClCompile Include="..\..\lv_font_sans_18_bold.c" />
-    <ClCompile Include="..\..\lv_font_sans_18_bold_italic.c" />
-    <ClCompile Include="..\..\lv_font_sans_18_italic.c" />
-    <ClCompile Include="..\..\lv_font_sans_22_bold.c" />
-    <ClCompile Include="..\..\lv_font_sans_30_bold.c" />
-    <ClCompile Include="..\..\lv_font_sans_38_bold.c" />
-    <ClCompile Include="..\..\lv_font_mono_16.c" />
+    <ClCompile Include="..\..\..\lib\cJSON\cJSON.c">
+      <Filter>cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\cJSON\cJSON_Utils.c">
+      <Filter>cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Application.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CardUI.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Device.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\HomeUI.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_mono_25.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_28.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_28_bold.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_28_bold_italic.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_28_italic.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_34_bold.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_40_bold.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_50_bold.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lvgl_events.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\LvglUI.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\main.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MarkdownRenderer.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\MarkdownTestUI.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mouse_cursor_icon.c">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Queue.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\support.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Tasks.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\TrelloApi.cpp">
+      <Filter>KitchenDisplay</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\freetype\.clang-format">
@@ -9812,6 +9900,9 @@
     </Filter>
     <Filter Include="cmark">
       <UniqueIdentifier>{fef3a10e-7c56-44f0-a0d1-24d0574e2571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KitchenDisplay">
+      <UniqueIdentifier>{4ec254ec-ef22-456a-b20a-a5d18d366cb8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
