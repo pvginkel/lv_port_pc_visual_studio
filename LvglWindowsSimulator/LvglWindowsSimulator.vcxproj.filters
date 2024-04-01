@@ -241,9 +241,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_vector.h">
       <Filter>lvgl\src\draw</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_buf.h">
-      <Filter>lvgl\src\draw</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_decoder.h">
       <Filter>lvgl\src\draw</Filter>
     </ClInclude>
@@ -1042,6 +1039,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\TrelloApi.h">
       <Filter>KitchenDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.h">
+      <Filter>lvgl\src\misc\cache</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -2047,9 +2047,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_vector.c">
       <Filter>lvgl\src\draw</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_buf.c">
-      <Filter>lvgl\src\draw</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_decoder.c">
       <Filter>lvgl\src\draw</Filter>
     </ClCompile>
@@ -3049,6 +3046,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_symbols.c">
       <Filter>KitchenDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.c">
+      <Filter>lvgl\src\misc\cache</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

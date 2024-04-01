@@ -135,7 +135,6 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_rect.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_triangle.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_vector.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_buf.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_decoder.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_draw_pxp.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_pxp_cfg.h" />
@@ -402,6 +401,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="..\cmark\src\render.h" />
     <ClInclude Include="..\cmark\src\scanners.h" />
     <ClInclude Include="..\cmark\src\utf8.h" />
+    <ClInclude Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.h" />
     <ClInclude Include="lv_conf.h" />
   </ItemGroup>
   <ItemGroup>
@@ -741,7 +741,6 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_rect.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_triangle.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_vector.c" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_buf.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_decoder.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_draw_buf_pxp.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_draw_pxp.c" />
@@ -1075,6 +1074,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\cmark\src\scanners.c" />
     <ClCompile Include="..\cmark\src\utf8.c" />
     <ClCompile Include="..\cmark\src\xml.c" />
+    <ClCompile Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.c" />
     <ClCompile Include="LvglWindowsSimulator.cpp" />
   </ItemGroup>
   <ItemGroup>
