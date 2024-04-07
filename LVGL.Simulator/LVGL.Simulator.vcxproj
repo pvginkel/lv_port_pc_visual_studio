@@ -16,20 +16,31 @@
   <Import Project="Mile.Project.Windows.Legacy\Mile.Project.Cpp.props" />
   <Import Project="freetype.props" />
   <PropertyGroup>
-    <IncludePath>$(MSBuildThisFileDirectory);$(IncludePath)</IncludePath>
+    <IncludePath>$(MSBuildThisFileDirectory);$(MSBuildThisFileDirectory)..\..\main\;$(MSBuildThisFileDirectory)lvgl\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>false</TreatWarningAsError>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LV_SIMULATOR;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization Condition="'$(Configuration)'=='Release'">MinSpace</Optimization>
     </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="LVGL.Portable.vcxitems" />
   <Import Project="LVGL.Drivers.vcxitems" />
   <ItemGroup>
+    <ClInclude Include="..\..\main\Callback.h" />
+    <ClInclude Include="..\..\main\dithering.h" />
+    <ClInclude Include="..\..\main\includes.h" />
+    <ClInclude Include="..\..\main\LoadingUI.h" />
+    <ClInclude Include="..\..\main\LvglUI.h" />
+    <ClInclude Include="..\..\main\lvgl_assert.h" />
+    <ClInclude Include="..\..\main\lv_support.h" />
+    <ClInclude Include="..\..\main\Messages.h" />
+    <ClInclude Include="..\..\main\support.h" />
+    <ClInclude Include="..\..\main\ThermostatState.h" />
+    <ClInclude Include="..\..\main\ThermostatUI.h" />
     <ClInclude Include="lv_conf.h" />
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +54,15 @@
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\main\dithering.cpp" />
+    <ClCompile Include="..\..\main\LoadingUI.cpp" />
+    <ClCompile Include="..\..\main\LvglUI.cpp" />
+    <ClCompile Include="..\..\main\lv_font_roboto_100_digits.c" />
+    <ClCompile Include="..\..\main\lv_font_roboto_40.c" />
+    <ClCompile Include="..\..\main\lv_support.cpp" />
+    <ClCompile Include="..\..\main\Messages.cpp" />
+    <ClCompile Include="..\..\main\support.cpp" />
+    <ClCompile Include="..\..\main\ThermostatUI.cpp" />
     <ClCompile Include="LVGL.Simulator.cpp" />
   </ItemGroup>
   <ItemGroup>

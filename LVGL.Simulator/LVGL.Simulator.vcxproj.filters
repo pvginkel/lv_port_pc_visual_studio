@@ -5,6 +5,39 @@
   <ItemGroup>
     <ClInclude Include="lv_conf.h" />
     <ClInclude Include="lv_drv_conf.h" />
+    <ClInclude Include="..\..\main\Callback.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\dithering.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\includes.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\LoadingUI.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\lv_support.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\lvgl_assert.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\LvglUI.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\Messages.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\support.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\ThermostatState.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\ThermostatUI.h">
+      <Filter>ThermostatDisplay</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LVGL.Simulator.manifest" />
@@ -15,6 +48,33 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LVGL.Simulator.cpp" />
+    <ClCompile Include="..\..\main\dithering.cpp">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\LoadingUI.cpp">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\lv_font_roboto_40.c">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\lv_font_roboto_100_digits.c">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\lv_support.cpp">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\LvglUI.cpp">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\Messages.cpp">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\support.cpp">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\ThermostatUI.cpp">
+      <Filter>ThermostatDisplay</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LVGL.Simulator.rc" />
@@ -24,5 +84,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="freetype.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ThermostatDisplay">
+      <UniqueIdentifier>{a4a78e00-8b46-4e85-94bc-3f20a49a6e7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
