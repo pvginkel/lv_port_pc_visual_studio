@@ -12,7 +12,7 @@ int main() {
     int32_t zoom_level = 50;
     bool allow_dpi_override = false;
     bool simulator_mode = true;
-    lv_display_t* display = lv_windows_create_display(L"Kitchen Display", 1024, 600, zoom_level,
+    lv_display_t* display = lv_windows_create_display(L"Paper Clock", 1872, 1404, zoom_level,
                                                       allow_dpi_override, simulator_mode);
 
     if (!display) {

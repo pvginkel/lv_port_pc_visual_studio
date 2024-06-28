@@ -27,7 +27,7 @@
   <Import Project="..\LvglPlatform\LvglWindowsIconResource\LvglWindowsIconResource.props" />
   <Import Project="freetype.props" />
   <PropertyGroup>
-    <IncludePath>$(MSBuildThisFileDirectory);$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\;$(MSBuildThisFileDirectory)..\LvglPlatform\;$(MSBuildThisFileDirectory)..\..\..\src\;$(MSBuildThisFileDirectory)..\..\..\lib\cJSON\;$(MSBuildThisFileDirectory)..\curl\include\;$(MSBuildThisFileDirectory)..\icu4c\include\;$(MSBuildThisFileDirectory)..\cmark\build\src\;$(MSBuildThisFileDirectory)..\cmark\src\;$(IncludePath)</IncludePath>
+    <IncludePath>$(MSBuildThisFileDirectory);$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\;$(MSBuildThisFileDirectory)..\LvglPlatform\;$(MSBuildThisFileDirectory)..\..\..\src\;$(MSBuildThisFileDirectory)..\..\..\lib\cJSON\;$(MSBuildThisFileDirectory)..\curl\include\;$(MSBuildThisFileDirectory)..\icu4c\include\;$(MSBuildThisFileDirectory)..\paho\include\mqtt\;$(MSBuildThisFileDirectory)..\cpaho\src\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -44,14 +44,14 @@
       <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(MSBuildThisFileDirectory)..\curl\lib\libcurl.dll.a;C:\Program Files\OpenSSL-Win64\lib\VC\x64\MT\libcrypto.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icudt.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuin.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuio.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutest.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutu.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuuc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy $(MSBuildThisFileDirectory)..\curl\bin\* $(TargetDir)
-copy $(MSBuildThisFileDirectory)..\icu4c\bin64\* $(TargetDir)
-copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\curl\bin\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
+copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\bin64\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
+copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\lib64\*.pdb C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy $(MSBuildThisFileDirectory)..\curl\bin\* $(TargetDir)
-copy $(MSBuildThisFileDirectory)..\icu4c\bin64\* $(TargetDir)
-copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\curl\bin\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
+copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\bin64\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
+copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\lib64\*.pdb C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -368,16 +368,14 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="..\..\..\lib\cJSON\cJSON_Utils.h" />
     <ClInclude Include="..\..\..\src\Application.h" />
     <ClInclude Include="..\..\..\src\Callback.h" />
-    <ClInclude Include="..\..\..\src\CardUI.h" />
     <ClInclude Include="..\..\..\src\Device.h" />
     <ClInclude Include="..\..\..\src\fonts.h" />
-    <ClInclude Include="..\..\..\src\HomeUI.h" />
+    <ClInclude Include="..\..\..\src\ClockUI.h" />
+    <ClInclude Include="..\..\..\src\HomeAssistantApi.h" />
     <ClInclude Include="..\..\..\src\includes.h" />
     <ClInclude Include="..\..\..\src\LvglUI.h" />
     <ClInclude Include="..\..\..\src\lvgl_events.h" />
     <ClInclude Include="..\..\..\src\lv_conf.h" />
-    <ClInclude Include="..\..\..\src\MarkdownRenderer.h" />
-    <ClInclude Include="..\..\..\src\MarkdownTestUI.h" />
     <ClInclude Include="..\..\..\src\Messages.h" />
     <ClInclude Include="..\..\..\src\Queue.h" />
     <ClInclude Include="..\..\..\src\RefCounted.h" />
@@ -385,22 +383,6 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="..\..\..\src\settings.h" />
     <ClInclude Include="..\..\..\src\support.h" />
     <ClInclude Include="..\..\..\src\Tasks.h" />
-    <ClInclude Include="..\..\..\src\TrelloApi.h" />
-    <ClInclude Include="..\cmark\build\src\cmark_export.h" />
-    <ClInclude Include="..\cmark\build\src\cmark_version.h" />
-    <ClInclude Include="..\cmark\src\buffer.h" />
-    <ClInclude Include="..\cmark\src\chunk.h" />
-    <ClInclude Include="..\cmark\src\cmark.h" />
-    <ClInclude Include="..\cmark\src\cmark_ctype.h" />
-    <ClInclude Include="..\cmark\src\houdini.h" />
-    <ClInclude Include="..\cmark\src\inlines.h" />
-    <ClInclude Include="..\cmark\src\iterator.h" />
-    <ClInclude Include="..\cmark\src\node.h" />
-    <ClInclude Include="..\cmark\src\parser.h" />
-    <ClInclude Include="..\cmark\src\references.h" />
-    <ClInclude Include="..\cmark\src\render.h" />
-    <ClInclude Include="..\cmark\src\scanners.h" />
-    <ClInclude Include="..\cmark\src\utf8.h" />
     <ClInclude Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.h" />
     <ClInclude Include="lv_conf.h" />
   </ItemGroup>
@@ -1034,9 +1016,9 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\..\..\lib\cJSON\cJSON.c" />
     <ClCompile Include="..\..\..\lib\cJSON\cJSON_Utils.c" />
     <ClCompile Include="..\..\..\src\Application.cpp" />
-    <ClCompile Include="..\..\..\src\CardUI.cpp" />
     <ClCompile Include="..\..\..\src\Device.cpp" />
-    <ClCompile Include="..\..\..\src\HomeUI.cpp" />
+    <ClCompile Include="..\..\..\src\ClockUI.cpp" />
+    <ClCompile Include="..\..\..\src\HomeAssistantApi.cpp" />
     <ClCompile Include="..\..\..\src\LvglUI.cpp" />
     <ClCompile Include="..\..\..\src\lvgl_events.cpp" />
     <ClCompile Include="..\..\..\src\lv_font_mono_25.c" />
@@ -1049,31 +1031,9 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\..\..\src\lv_font_sans_50_bold.c" />
     <ClCompile Include="..\..\..\src\lv_font_symbols.c" />
     <ClCompile Include="..\..\..\src\main.cpp" />
-    <ClCompile Include="..\..\..\src\MarkdownRenderer.cpp" />
-    <ClCompile Include="..\..\..\src\MarkdownTestUI.cpp" />
-    <ClCompile Include="..\..\..\src\mouse_cursor_icon.c" />
     <ClCompile Include="..\..\..\src\Queue.cpp" />
     <ClCompile Include="..\..\..\src\support.cpp" />
     <ClCompile Include="..\..\..\src\Tasks.cpp" />
-    <ClCompile Include="..\..\..\src\TrelloApi.cpp" />
-    <ClCompile Include="..\cmark\src\blocks.c" />
-    <ClCompile Include="..\cmark\src\buffer.c" />
-    <ClCompile Include="..\cmark\src\cmark.c" />
-    <ClCompile Include="..\cmark\src\cmark_ctype.c" />
-    <ClCompile Include="..\cmark\src\commonmark.c" />
-    <ClCompile Include="..\cmark\src\houdini_href_e.c" />
-    <ClCompile Include="..\cmark\src\houdini_html_e.c" />
-    <ClCompile Include="..\cmark\src\houdini_html_u.c" />
-    <ClCompile Include="..\cmark\src\html.c" />
-    <ClCompile Include="..\cmark\src\inlines.c" />
-    <ClCompile Include="..\cmark\src\iterator.c" />
-    <ClCompile Include="..\cmark\src\latex.c" />
-    <ClCompile Include="..\cmark\src\node.c" />
-    <ClCompile Include="..\cmark\src\references.c" />
-    <ClCompile Include="..\cmark\src\render.c" />
-    <ClCompile Include="..\cmark\src\scanners.c" />
-    <ClCompile Include="..\cmark\src\utf8.c" />
-    <ClCompile Include="..\cmark\src\xml.c" />
     <ClCompile Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.c" />
     <ClCompile Include="LvglWindowsSimulator.cpp" />
   </ItemGroup>
