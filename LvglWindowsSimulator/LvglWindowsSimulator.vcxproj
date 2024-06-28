@@ -27,16 +27,32 @@
   <Import Project="..\LvglPlatform\LvglWindowsIconResource\LvglWindowsIconResource.props" />
   <Import Project="freetype.props" />
   <PropertyGroup>
-    <IncludePath>$(MSBuildThisFileDirectory);$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\;$(MSBuildThisFileDirectory)..\LvglPlatform\;$(IncludePath)</IncludePath>
+    <IncludePath>$(MSBuildThisFileDirectory);$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\;$(MSBuildThisFileDirectory)..\LvglPlatform\;$(MSBuildThisFileDirectory)..\..\..\src\;$(MSBuildThisFileDirectory)..\..\..\lib\cJSON\;$(MSBuildThisFileDirectory)..\curl\include\;$(MSBuildThisFileDirectory)..\icu4c\include\;$(MSBuildThisFileDirectory)..\cmark\build\src\;$(MSBuildThisFileDirectory)..\cmark\src\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>false</TreatWarningAsError>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;LV_SIMULATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization Condition="'$(Configuration)'=='Release'">MinSpace</Optimization>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(MSBuildThisFileDirectory)..\curl\lib\libcurl.dll.a;C:\Program Files\OpenSSL-Win64\lib\VC\x64\MT\libcrypto.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icudt.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuin.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuio.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutest.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutu.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuuc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(MSBuildThisFileDirectory)..\curl\lib\libcurl.dll.a;C:\Program Files\OpenSSL-Win64\lib\VC\x64\MT\libcrypto.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icudt.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuin.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuio.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutest.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutu.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuuc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy $(MSBuildThisFileDirectory)..\curl\bin\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\bin64\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy $(MSBuildThisFileDirectory)..\curl\bin\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\bin64\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\demos\benchmark\lv_demo_benchmark.h" />
@@ -119,7 +135,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_rect.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_triangle.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_vector.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_buf.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_decoder.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_draw_pxp.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_pxp_cfg.h" />
@@ -349,6 +364,44 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\textarea\lv_textarea.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\tileview\lv_tileview.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.h" />
+    <ClInclude Include="..\..\..\lib\cJSON\cJSON.h" />
+    <ClInclude Include="..\..\..\lib\cJSON\cJSON_Utils.h" />
+    <ClInclude Include="..\..\..\src\Application.h" />
+    <ClInclude Include="..\..\..\src\Callback.h" />
+    <ClInclude Include="..\..\..\src\CardUI.h" />
+    <ClInclude Include="..\..\..\src\Device.h" />
+    <ClInclude Include="..\..\..\src\fonts.h" />
+    <ClInclude Include="..\..\..\src\HomeUI.h" />
+    <ClInclude Include="..\..\..\src\includes.h" />
+    <ClInclude Include="..\..\..\src\LvglUI.h" />
+    <ClInclude Include="..\..\..\src\lvgl_events.h" />
+    <ClInclude Include="..\..\..\src\lv_conf.h" />
+    <ClInclude Include="..\..\..\src\MarkdownRenderer.h" />
+    <ClInclude Include="..\..\..\src\MarkdownTestUI.h" />
+    <ClInclude Include="..\..\..\src\Messages.h" />
+    <ClInclude Include="..\..\..\src\Queue.h" />
+    <ClInclude Include="..\..\..\src\RefCounted.h" />
+    <ClInclude Include="..\..\..\src\result.h" />
+    <ClInclude Include="..\..\..\src\settings.h" />
+    <ClInclude Include="..\..\..\src\support.h" />
+    <ClInclude Include="..\..\..\src\Tasks.h" />
+    <ClInclude Include="..\..\..\src\TrelloApi.h" />
+    <ClInclude Include="..\cmark\build\src\cmark_export.h" />
+    <ClInclude Include="..\cmark\build\src\cmark_version.h" />
+    <ClInclude Include="..\cmark\src\buffer.h" />
+    <ClInclude Include="..\cmark\src\chunk.h" />
+    <ClInclude Include="..\cmark\src\cmark.h" />
+    <ClInclude Include="..\cmark\src\cmark_ctype.h" />
+    <ClInclude Include="..\cmark\src\houdini.h" />
+    <ClInclude Include="..\cmark\src\inlines.h" />
+    <ClInclude Include="..\cmark\src\iterator.h" />
+    <ClInclude Include="..\cmark\src\node.h" />
+    <ClInclude Include="..\cmark\src\parser.h" />
+    <ClInclude Include="..\cmark\src\references.h" />
+    <ClInclude Include="..\cmark\src\render.h" />
+    <ClInclude Include="..\cmark\src\scanners.h" />
+    <ClInclude Include="..\cmark\src\utf8.h" />
+    <ClInclude Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.h" />
     <ClInclude Include="lv_conf.h" />
   </ItemGroup>
   <ItemGroup>
@@ -688,7 +741,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_rect.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_triangle.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_draw_vector.c" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_buf.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\lv_image_decoder.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_draw_buf_pxp.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\draw\nxp\pxp\lv_draw_pxp.c" />
@@ -979,6 +1031,50 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\textarea\lv_textarea.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\tileview\lv_tileview.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.c" />
+    <ClCompile Include="..\..\..\lib\cJSON\cJSON.c" />
+    <ClCompile Include="..\..\..\lib\cJSON\cJSON_Utils.c" />
+    <ClCompile Include="..\..\..\src\Application.cpp" />
+    <ClCompile Include="..\..\..\src\CardUI.cpp" />
+    <ClCompile Include="..\..\..\src\Device.cpp" />
+    <ClCompile Include="..\..\..\src\HomeUI.cpp" />
+    <ClCompile Include="..\..\..\src\LvglUI.cpp" />
+    <ClCompile Include="..\..\..\src\lvgl_events.cpp" />
+    <ClCompile Include="..\..\..\src\lv_font_mono_25.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_28.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_28_bold.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_28_bold_italic.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_28_italic.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_34_bold.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_40_bold.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_50_bold.c" />
+    <ClCompile Include="..\..\..\src\lv_font_symbols.c" />
+    <ClCompile Include="..\..\..\src\main.cpp" />
+    <ClCompile Include="..\..\..\src\MarkdownRenderer.cpp" />
+    <ClCompile Include="..\..\..\src\MarkdownTestUI.cpp" />
+    <ClCompile Include="..\..\..\src\mouse_cursor_icon.c" />
+    <ClCompile Include="..\..\..\src\Queue.cpp" />
+    <ClCompile Include="..\..\..\src\support.cpp" />
+    <ClCompile Include="..\..\..\src\Tasks.cpp" />
+    <ClCompile Include="..\..\..\src\TrelloApi.cpp" />
+    <ClCompile Include="..\cmark\src\blocks.c" />
+    <ClCompile Include="..\cmark\src\buffer.c" />
+    <ClCompile Include="..\cmark\src\cmark.c" />
+    <ClCompile Include="..\cmark\src\cmark_ctype.c" />
+    <ClCompile Include="..\cmark\src\commonmark.c" />
+    <ClCompile Include="..\cmark\src\houdini_href_e.c" />
+    <ClCompile Include="..\cmark\src\houdini_html_e.c" />
+    <ClCompile Include="..\cmark\src\houdini_html_u.c" />
+    <ClCompile Include="..\cmark\src\html.c" />
+    <ClCompile Include="..\cmark\src\inlines.c" />
+    <ClCompile Include="..\cmark\src\iterator.c" />
+    <ClCompile Include="..\cmark\src\latex.c" />
+    <ClCompile Include="..\cmark\src\node.c" />
+    <ClCompile Include="..\cmark\src\references.c" />
+    <ClCompile Include="..\cmark\src\render.c" />
+    <ClCompile Include="..\cmark\src\scanners.c" />
+    <ClCompile Include="..\cmark\src\utf8.c" />
+    <ClCompile Include="..\cmark\src\xml.c" />
+    <ClCompile Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.c" />
     <ClCompile Include="LvglWindowsSimulator.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LvglWindowsSimulator", "Lvg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LvglWindowsDesktopApplication", "LvglWindowsDesktopApplication\LvglWindowsDesktopApplication.vcxproj", "{7148D2C8-4594-4054-95F2-6211DA069D8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{2B01BD7E-5831-401E-998A-F2ED26C34FB3}"
+	ProjectSection(SolutionItems) = preProject
+		..\tools\generate-fonts.bat = ..\tools\generate-fonts.bat
+		..\tools\generate-fonts.ts = ..\tools\generate-fonts.ts
+		..\generate-fonts.yaml = ..\generate-fonts.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
