@@ -383,6 +383,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="..\..\..\src\settings.h" />
     <ClInclude Include="..\..\..\src\support.h" />
     <ClInclude Include="..\..\..\src\Tasks.h" />
+    <ClInclude Include="..\..\..\src\TestClockUI.h" />
     <ClInclude Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.h" />
     <ClInclude Include="lv_conf.h" />
   </ItemGroup>
@@ -1021,21 +1022,12 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\..\..\src\HomeAssistantApi.cpp" />
     <ClCompile Include="..\..\..\src\LvglUI.cpp" />
     <ClCompile Include="..\..\..\src\lvgl_events.cpp" />
-    <ClCompile Include="..\..\..\src\lv_font_mono_25.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_100_bold.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_28.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_28_bold.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_28_bold_italic.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_28_italic.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_34_bold.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_40_bold.c" />
-    <ClCompile Include="..\..\..\src\lv_font_sans_50_bold.c" />
-    <ClCompile Include="..\..\..\src\lv_font_symbols.c" />
     <ClCompile Include="..\..\..\src\main.cpp" />
     <ClCompile Include="..\..\..\src\mdi-icons.cpp" />
     <ClCompile Include="..\..\..\src\Queue.cpp" />
     <ClCompile Include="..\..\..\src\support.cpp" />
     <ClCompile Include="..\..\..\src\Tasks.cpp" />
+    <ClCompile Include="..\..\..\src\TestClockUI.cpp" />
     <ClCompile Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.c" />
     <ClCompile Include="LvglWindowsSimulator.cpp" />
   </ItemGroup>
