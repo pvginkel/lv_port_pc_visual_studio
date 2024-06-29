@@ -936,58 +936,58 @@
       <Filter>cJSON</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\Application.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\Callback.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\Device.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\fonts.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\ClockUI.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\includes.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\lv_conf.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\lvgl_events.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\LvglUI.h">
-      <Filter>KitchenDisplay</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\Messages.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\Queue.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\RefCounted.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\result.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\settings.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\support.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\Tasks.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClInclude>
     <ClInclude Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.h">
       <Filter>lvgl\src\misc\cache</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\HomeAssistantApi.h">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mdi-icons.h">
+      <Filter>PaperClock</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -2871,64 +2871,70 @@
       <Filter>cJSON</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Application.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Device.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\ClockUI.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_mono_25.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_sans_28.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_sans_28_bold.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_sans_28_bold_italic.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_sans_28_italic.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_sans_34_bold.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_sans_40_bold.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_sans_50_bold.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lvgl_events.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\LvglUI.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\main.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Queue.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\support.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Tasks.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\lv_font_symbols.c">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.c">
       <Filter>lvgl\src\misc\cache</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\HomeAssistantApi.cpp">
-      <Filter>KitchenDisplay</Filter>
+      <Filter>PaperClock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mdi-icons.cpp">
+      <Filter>PaperClock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lv_font_sans_100_bold.c">
+      <Filter>PaperClock</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -9781,7 +9787,7 @@
     <Filter Include="cJSON">
       <UniqueIdentifier>{4266539f-ae78-4e2e-8075-68141f05a878}</UniqueIdentifier>
     </Filter>
-    <Filter Include="KitchenDisplay">
+    <Filter Include="PaperClock">
       <UniqueIdentifier>{4ec254ec-ef22-456a-b20a-a5d18d366cb8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>

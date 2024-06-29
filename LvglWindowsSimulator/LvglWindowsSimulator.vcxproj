@@ -44,14 +44,14 @@
       <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(MSBuildThisFileDirectory)..\curl\lib\libcurl.dll.a;C:\Program Files\OpenSSL-Win64\lib\VC\x64\MT\libcrypto.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icudt.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuin.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuio.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutest.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icutu.lib;$(MSBuildThisFileDirectory)..\icu4c\lib64\icuuc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\curl\bin\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
-copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\bin64\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
-copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\lib64\*.pdb C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy $(MSBuildThisFileDirectory)..\curl\bin\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\bin64\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\curl\bin\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
-copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\bin64\* C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\
-copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4c\lib64\*.pdb C:\Projects\PaperClock\tools\windows_simulator\Output\Binaries\Debug\x64\</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy $(MSBuildThisFileDirectory)..\curl\bin\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\bin64\* $(TargetDir)
+copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -376,7 +376,7 @@ copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4
     <ClInclude Include="..\..\..\src\LvglUI.h" />
     <ClInclude Include="..\..\..\src\lvgl_events.h" />
     <ClInclude Include="..\..\..\src\lv_conf.h" />
-    <ClInclude Include="..\..\..\src\Messages.h" />
+    <ClInclude Include="..\..\..\src\mdi-icons.h" />
     <ClInclude Include="..\..\..\src\Queue.h" />
     <ClInclude Include="..\..\..\src\RefCounted.h" />
     <ClInclude Include="..\..\..\src\result.h" />
@@ -1022,6 +1022,7 @@ copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4
     <ClCompile Include="..\..\..\src\LvglUI.cpp" />
     <ClCompile Include="..\..\..\src\lvgl_events.cpp" />
     <ClCompile Include="..\..\..\src\lv_font_mono_25.c" />
+    <ClCompile Include="..\..\..\src\lv_font_sans_100_bold.c" />
     <ClCompile Include="..\..\..\src\lv_font_sans_28.c" />
     <ClCompile Include="..\..\..\src\lv_font_sans_28_bold.c" />
     <ClCompile Include="..\..\..\src\lv_font_sans_28_bold_italic.c" />
@@ -1031,6 +1032,7 @@ copy C:\Projects\PaperClock\tools\windows_simulator\LvglWindowsSimulator\..\icu4
     <ClCompile Include="..\..\..\src\lv_font_sans_50_bold.c" />
     <ClCompile Include="..\..\..\src\lv_font_symbols.c" />
     <ClCompile Include="..\..\..\src\main.cpp" />
+    <ClCompile Include="..\..\..\src\mdi-icons.cpp" />
     <ClCompile Include="..\..\..\src\Queue.cpp" />
     <ClCompile Include="..\..\..\src\support.cpp" />
     <ClCompile Include="..\..\..\src\Tasks.cpp" />
