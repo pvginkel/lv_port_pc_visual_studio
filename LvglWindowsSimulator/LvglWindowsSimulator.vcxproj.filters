@@ -992,6 +992,9 @@
     <ClInclude Include="..\..\..\src\TestClockUI.h">
       <Filter>PaperClock</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\ShutdownUI.h">
+      <Filter>PaperClock</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -2910,6 +2913,9 @@
       <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\TestClockUI.cpp">
+      <Filter>PaperClock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ShutdownUI.cpp">
       <Filter>PaperClock</Filter>
     </ClCompile>
   </ItemGroup>

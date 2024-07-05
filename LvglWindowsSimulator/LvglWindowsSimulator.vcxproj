@@ -381,6 +381,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="..\..\..\src\RefCounted.h" />
     <ClInclude Include="..\..\..\src\result.h" />
     <ClInclude Include="..\..\..\src\settings.h" />
+    <ClInclude Include="..\..\..\src\ShutdownUI.h" />
     <ClInclude Include="..\..\..\src\support.h" />
     <ClInclude Include="..\..\..\src\Tasks.h" />
     <ClInclude Include="..\..\..\src\TestClockUI.h" />
@@ -1025,6 +1026,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\..\..\src\main.cpp" />
     <ClCompile Include="..\..\..\src\mdi-icons.cpp" />
     <ClCompile Include="..\..\..\src\Queue.cpp" />
+    <ClCompile Include="..\..\..\src\ShutdownUI.cpp" />
     <ClCompile Include="..\..\..\src\support.cpp" />
     <ClCompile Include="..\..\..\src\Tasks.cpp" />
     <ClCompile Include="..\..\..\src\TestClockUI.cpp" />
