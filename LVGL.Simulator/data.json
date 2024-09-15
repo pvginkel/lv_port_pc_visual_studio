@@ -1,0 +1,91 @@
+﻿{
+  "container_starts": {
+    "day": 16,
+    "week": 16
+  },
+  "last_builds": [
+    {
+      "execution": 1726369215,
+      "name": "HelmCharts",
+      "number": 289,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1726365635,
+      "name": "DockerImages",
+      "number": 102,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1726005635,
+      "name": "Home",
+      "number": 155,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1725962434,
+      "name": "Webathome",
+      "number": 36,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1725611827,
+      "name": "FundaChecker",
+      "number": 5,
+      "status": "SUCCESS"
+    }
+  ],
+  "last_failed_builds": [],
+  "last_failed_jobs": [
+    {
+      "completed": null,
+      "created": 1726185600,
+      "failed": 1,
+      "name": "version-poller-cronjob-28769760",
+      "namespace": "version-poller",
+      "succeeded": 0
+    }
+  ],
+  "nodes": [
+    {
+      "allocated_containers": 41,
+      "allocated_pods": 30,
+      "cpu_capacity": 6000000000,
+      "cpu_usage": 88988223,
+      "created": 1721215956,
+      "memory_capacity": 14305348,
+      "memory_usage": 4413896,
+      "name": "srvk8sl1"
+    },
+    {
+      "allocated_containers": 33,
+      "allocated_pods": 15,
+      "cpu_capacity": 3000000000,
+      "cpu_usage": 118288503,
+      "created": 1721232963,
+      "memory_capacity": 16370888,
+      "memory_usage": 3525656,
+      "name": "srvk8ss1"
+    },
+    {
+      "allocated_containers": 28,
+      "allocated_pods": 21,
+      "cpu_capacity": 3000000000,
+      "cpu_usage": 231022877,
+      "created": 1721232973,
+      "memory_capacity": 16370888,
+      "memory_usage": 6362432,
+      "name": "srvk8ss2"
+    },
+    {
+      "allocated_containers": 38,
+      "allocated_pods": 28,
+      "cpu_capacity": 3000000000,
+      "cpu_usage": 111138193,
+      "created": 1721233035,
+      "memory_capacity": 16370888,
+      "memory_usage": 2889564,
+      "name": "srvk8ss3"
+    }
+  ]
+}

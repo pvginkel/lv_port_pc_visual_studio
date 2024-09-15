@@ -21,6 +21,10 @@
 #pragma warning(disable:4244)
 #endif
 
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
 #include "lvgl/demos/lv_demos.h"
@@ -28,8 +32,7 @@
 
 #include "includes.h"
 
-#include "ThermostatUI.h"
-#include "LoadingUI.h"
+#include "StatsUI.h"
 
 #if _MSC_VER >= 1200
 // Restore compilation warnings.
@@ -59,46 +62,18 @@ bool single_display_mode_initialization()
 
 void setup_app()
 {
-    static LoadingUI* loading;
-    static ThermostatUI* thermostat;
+    static StatsUI* stats;
 
-#if true
-    thermostat = new ThermostatUI(lv_scr_act());
-    thermostat->begin();
+    stats = new StatsUI(lv_scr_act());
+    stats->begin();
 
-    ThermostatState state;
-    state.localHumidity = 62;
-    state.localTemperature = 19.4;
-    state.mode = ThermostatMode::Heat;
-    state.setpoint = 19.5;
-    state.state = ThermostatRunningState::True;
+    stringstream buffer;
+    buffer << ifstream("data.json").rdbuf();
 
-    thermostat->setState(state);
-#elif 0
-    loading = new LoadingUI(lv_screen_active());
-    loading->begin();
+    StatsDto state;
+    StatsDto::fromJson(buffer.str().c_str(), state);
 
-    loading->setTitle("Error connecting to WiFi");
-
-    loading->setTitle("Connecting to WiFi");
-    loading->setState(LoadingUIState::Loading);
-
-    loading->redraw();
-#else
-    loading = new LoadingUI(lv_screen_active(), false);
-    loading->begin();
-
-    loading->setTitle("Error connecting to WiFi");
-
-    loading->onRetryClicked([] {
-        loading->setTitle("Connecting to WiFi");
-        loading->setState(LoadingUIState::Loading);
-        loading->redraw();
-        });
-    loading->setError("Cannot find AP");
-    loading->setState(LoadingUIState::Error);
-    loading->redraw();
-#endif
+    stats->setState(state);
 }
 
 int main()
