@@ -62,18 +62,19 @@ bool single_display_mode_initialization()
 
 void setup_app()
 {
-    static StatsUI* stats;
+    static StatsUI* ui;
 
-    stats = new StatsUI(lv_scr_act());
-    stats->begin();
+    ui = new StatsUI(nullptr);
+    ui->begin();
 
     stringstream buffer;
     buffer << ifstream("data.json").rdbuf();
 
-    StatsDto state;
-    StatsDto::fromJson(buffer.str().c_str(), state);
+    StatsDto stats;
+    StatsDto::from_json(buffer.str().c_str(), stats);
 
-    stats->setState(state);
+    ui->set_stats(move(stats));
+    ui->render();
 }
 
 int main()

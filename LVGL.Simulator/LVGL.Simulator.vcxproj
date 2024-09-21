@@ -31,6 +31,7 @@
   <Import Project="LVGL.Drivers.vcxitems" />
   <ItemGroup>
     <ClInclude Include="..\..\..\main\Callback.h" />
+    <ClInclude Include="..\..\..\main\Device.h" />
     <ClInclude Include="..\..\..\main\includes.h" />
     <ClInclude Include="..\..\..\main\LvglUI.h" />
     <ClInclude Include="..\..\..\main\lvgl_assert.h" />
@@ -54,11 +55,15 @@
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\main\Device.cpp" />
     <ClCompile Include="..\..\..\main\LvglUI.cpp" />
     <ClCompile Include="..\..\..\main\lv_font_roboto_100_digits.c" />
+    <ClCompile Include="..\..\..\main\lv_font_roboto_12.c" />
+    <ClCompile Include="..\..\..\main\lv_font_roboto_18.c" />
+    <ClCompile Include="..\..\..\main\lv_font_roboto_24.c" />
+    <ClCompile Include="..\..\..\main\lv_font_roboto_28.c" />
     <ClCompile Include="..\..\..\main\lv_font_roboto_40.c" />
     <ClCompile Include="..\..\..\main\lv_support.cpp" />
-    <ClCompile Include="..\..\..\main\Messages.cpp" />
     <ClCompile Include="..\..\..\main\StatsDto.cpp" />
     <ClCompile Include="..\..\..\main\support.cpp" />
     <ClCompile Include="..\..\..\main\StatsUI.cpp" />
