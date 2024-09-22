@@ -64,7 +64,7 @@ void setup_app()
 {
     static StatsUI* ui;
 
-    ui = new StatsUI(nullptr);
+    ui = new StatsUI();
     ui->begin();
 
     stringstream buffer;
