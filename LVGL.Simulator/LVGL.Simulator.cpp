@@ -70,10 +70,8 @@ void setup_app()
     stringstream buffer;
     buffer << ifstream("data.json").rdbuf();
 
-    StatsDto stats;
-    StatsDto::from_json(buffer.str().c_str(), stats);
+    StatsDto::from_json(buffer.str().c_str(), ui->get_stats());
 
-    ui->set_stats(move(stats));
     ui->render();
 }
 

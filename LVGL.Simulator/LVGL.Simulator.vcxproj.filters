@@ -51,24 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LVGL.Simulator.cpp" />
-    <ClCompile Include="..\..\..\main\lv_font_roboto_12.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_roboto_18.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_roboto_24.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_roboto_28.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_roboto_40.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_roboto_100_digits.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\main\Device.cpp">
       <Filter>InfraStatisticsDisplay</Filter>
     </ClCompile>
@@ -91,6 +73,24 @@
       <Filter>InfraStatisticsDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\support.cpp">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_icons_24.c">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_icons_28.c">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_medium_28.c">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_medium_40.c">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_regular_28.c">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_regular_40.c">
       <Filter>InfraStatisticsDisplay</Filter>
     </ClCompile>
   </ItemGroup>

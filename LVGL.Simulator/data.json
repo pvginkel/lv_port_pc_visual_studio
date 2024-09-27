@@ -1,31 +1,31 @@
 ﻿{
   "container_starts": {
-    "day": 16,
-    "week": 481
+    "day": 334,
+    "week": 1763
   },
   "last_builds": [
     {
-      "execution": 1726369215,
-      "name": "HelmCharts",
-      "number": 289,
-      "status": "SUCCESS"
-    },
-    {
-      "execution": 1726365635,
+      "execution": 1727450964,
       "name": "DockerImages",
-      "number": 102,
+      "number": 130,
       "status": "SUCCESS"
     },
     {
-      "execution": 1726005635,
-      "name": "Home",
-      "number": 155,
+      "execution": 1727449325,
+      "name": "HelmCharts",
+      "number": 340,
       "status": "SUCCESS"
     },
     {
-      "execution": 1725962434,
+      "execution": 1727449236,
       "name": "Webathome",
-      "number": 36,
+      "number": 41,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1727431235,
+      "name": "Home",
+      "number": 158,
       "status": "SUCCESS"
     },
     {
@@ -35,13 +35,44 @@
       "status": "SUCCESS"
     }
   ],
-  "last_failed_builds": [],
+  "last_failed_builds": [
+    {
+      "execution": 1727449140,
+      "name": "HelmCharts",
+      "number": 338,
+      "status": "FAILURE"
+    },
+    {
+      "execution": 1725601435,
+      "name": "MyDownloadsClient",
+      "number": 12,
+      "status": "FAILURE"
+    },
+    {
+      "execution": 1725561969,
+      "name": "ScanToPdfServer",
+      "number": 8,
+      "status": "FAILURE"
+    },
+    {
+      "execution": 1725560497,
+      "name": "ScanToPdfClient",
+      "number": 3,
+      "status": "FAILURE"
+    },
+    {
+      "execution": 1725303708,
+      "name": "FundaChecker",
+      "number": 3,
+      "status": "FAILURE"
+    }
+  ],
   "last_failed_jobs": [
     {
       "completed": null,
-      "created": 1726185600,
+      "created": 1727136000,
       "failed": 1,
-      "name": "version-poller-cronjob-28769760",
+      "name": "version-poller-cronjob-28785600",
       "namespace": "version-poller",
       "succeeded": 0
     }
@@ -51,40 +82,40 @@
       "allocated_containers": 41,
       "allocated_pods": 30,
       "cpu_capacity": 6000000000,
-      "cpu_usage": 88988223,
+      "cpu_usage": 99323752,
       "created": 1721215956,
-      "memory_capacity": 14305348,
-      "memory_usage": 4413896,
+      "memory_capacity": 14305352,
+      "memory_usage": 4613400,
       "name": "srvk8sl1"
     },
     {
-      "allocated_containers": 33,
-      "allocated_pods": 15,
+      "allocated_containers": 34,
+      "allocated_pods": 17,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 118288503,
+      "cpu_usage": 123477241,
       "created": 1721232963,
       "memory_capacity": 16370888,
-      "memory_usage": 3525656,
+      "memory_usage": 3919348,
       "name": "srvk8ss1"
     },
     {
-      "allocated_containers": 28,
-      "allocated_pods": 21,
+      "allocated_containers": 30,
+      "allocated_pods": 22,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 231022877,
+      "cpu_usage": 312759607,
       "created": 1721232973,
-      "memory_capacity": 16370888,
-      "memory_usage": 6362432,
+      "memory_capacity": 16370884,
+      "memory_usage": 7070972,
       "name": "srvk8ss2"
     },
     {
-      "allocated_containers": 38,
-      "allocated_pods": 28,
+      "allocated_containers": 35,
+      "allocated_pods": 25,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 111138193,
+      "cpu_usage": 146498007,
       "created": 1721233035,
       "memory_capacity": 16370888,
-      "memory_usage": 2889564,
+      "memory_usage": 3861560,
       "name": "srvk8ss3"
     }
   ]
