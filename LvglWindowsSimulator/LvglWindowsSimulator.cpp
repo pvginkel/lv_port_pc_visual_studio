@@ -50,7 +50,7 @@ int main() {
 
     _putenv("CURL_CA_BUNDLE=../Output/Binaries/Debug/x64/curl-ca-bundle.crt");
 
-    Application application;
+    Application application(new Device());
 
     application.begin();
 
