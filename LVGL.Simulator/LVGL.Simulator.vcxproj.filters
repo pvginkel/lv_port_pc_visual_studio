@@ -78,19 +78,19 @@
     <ClCompile Include="..\..\..\main\lv_font_icons_24.c">
       <Filter>InfraStatisticsDisplay</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_icons_28.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_medium_28.c">
-      <Filter>InfraStatisticsDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_medium_40.c">
       <Filter>InfraStatisticsDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_regular_28.c">
       <Filter>InfraStatisticsDisplay</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_regular_40.c">
+    <ClCompile Include="..\..\..\main\lv_font_medium_46.c">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_regular_46.c">
+      <Filter>InfraStatisticsDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_icons_33.c">
       <Filter>InfraStatisticsDisplay</Filter>
     </ClCompile>
   </ItemGroup>

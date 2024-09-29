@@ -58,11 +58,11 @@
     <ClCompile Include="..\..\..\main\Device.cpp" />
     <ClCompile Include="..\..\..\main\LvglUI.cpp" />
     <ClCompile Include="..\..\..\main\lv_font_icons_24.c" />
-    <ClCompile Include="..\..\..\main\lv_font_icons_28.c" />
+    <ClCompile Include="..\..\..\main\lv_font_icons_33.c" />
     <ClCompile Include="..\..\..\main\lv_font_medium_28.c" />
-    <ClCompile Include="..\..\..\main\lv_font_medium_40.c" />
+    <ClCompile Include="..\..\..\main\lv_font_medium_46.c" />
     <ClCompile Include="..\..\..\main\lv_font_regular_28.c" />
-    <ClCompile Include="..\..\..\main\lv_font_regular_40.c" />
+    <ClCompile Include="..\..\..\main\lv_font_regular_46.c" />
     <ClCompile Include="..\..\..\main\lv_support.cpp" />
     <ClCompile Include="..\..\..\main\StatsDto.cpp" />
     <ClCompile Include="..\..\..\main\support.cpp" />
