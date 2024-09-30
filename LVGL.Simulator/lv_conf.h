@@ -93,7 +93,7 @@
 
 /*Default Dot Per Inch. Used to initialize default sizes such as widgets sized, style paddings.
  *(Not so important, you can adjust it to modify default sizes and spaces)*/
-#define LV_DPI_DEF 130     /*[px/inch]*/
+#define LV_DPI_DEF 220     /*[px/inch]*/
 
 /*=======================
  * FEATURE CONFIGURATION
@@ -421,7 +421,7 @@
 #define LV_TXT_ENC LV_TXT_ENC_UTF8
 
 /*Can break (wrap) texts on these chars*/
-#define LV_TXT_BREAK_CHARS ""
+#define LV_TXT_BREAK_CHARS " ,.;:_"
 
 /*If a word is at least this long, will break wherever "prettiest"
  *To disable, set to a value <= 0*/

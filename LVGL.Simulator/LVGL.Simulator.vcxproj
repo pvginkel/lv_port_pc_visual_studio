@@ -38,8 +38,8 @@
     <ClInclude Include="..\..\..\main\lv_support.h" />
     <ClInclude Include="..\..\..\main\Messages.h" />
     <ClInclude Include="..\..\..\main\support.h" />
-    <ClInclude Include="..\..\..\main\StatsDto.h" />
-    <ClInclude Include="..\..\..\main\StatsUI.h" />
+    <ClInclude Include="..\..\..\main\CalendarEventsDto.h" />
+    <ClInclude Include="..\..\..\main\CalendarUI.h" />
     <ClInclude Include="..\cJSON\cJSON.h" />
     <ClInclude Include="..\cJSON\cJSON_Utils.h" />
     <ClInclude Include="lv_conf.h" />
@@ -61,12 +61,13 @@
     <ClCompile Include="..\..\..\main\lv_font_icons_33.c" />
     <ClCompile Include="..\..\..\main\lv_font_medium_28.c" />
     <ClCompile Include="..\..\..\main\lv_font_medium_46.c" />
+    <ClCompile Include="..\..\..\main\lv_font_regular_24.c" />
     <ClCompile Include="..\..\..\main\lv_font_regular_28.c" />
     <ClCompile Include="..\..\..\main\lv_font_regular_46.c" />
     <ClCompile Include="..\..\..\main\lv_support.cpp" />
-    <ClCompile Include="..\..\..\main\StatsDto.cpp" />
+    <ClCompile Include="..\..\..\main\CalendarEventsDto.cpp" />
     <ClCompile Include="..\..\..\main\support.cpp" />
-    <ClCompile Include="..\..\..\main\StatsUI.cpp" />
+    <ClCompile Include="..\..\..\main\CalendarUI.cpp" />
     <ClCompile Include="..\cJSON\cJSON.c" />
     <ClCompile Include="..\cJSON\cJSON_Utils.c" />
     <ClCompile Include="LVGL.Simulator.cpp" />

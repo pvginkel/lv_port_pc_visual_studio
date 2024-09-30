@@ -1,122 +1,244 @@
 ﻿{
-  "container_starts": {
-    "day": 334,
-    "week": 1763
-  },
-  "last_builds": [
+  "end": "2024-09-29",
+  "events": [
     {
-      "execution": 1727450964,
-      "name": "DockerImages",
-      "number": 130,
-      "status": "SUCCESS"
+      "calendar": {
+        "color": 0.6,
+        "name": "Anna"
+      },
+      "duration": 7200,
+      "end": "2024-09-23T22:00:00+02:00",
+      "instance": null,
+      "start": "2024-09-23T20:00:00+02:00",
+      "summary": "Muziek Amstelveen!!!!"
     },
     {
-      "execution": 1727449325,
-      "name": "HelmCharts",
-      "number": 340,
-      "status": "SUCCESS"
+      "calendar": {
+        "color": 0.4,
+        "name": "Jan"
+      },
+      "duration": 86400,
+      "end": "2024-09-23",
+      "instance": {
+        "instance": 6,
+        "total": 8
+      },
+      "start": "2024-09-23",
+      "summary": "Test"
     },
     {
-      "execution": 1727449236,
-      "name": "Webathome",
-      "number": 41,
-      "status": "SUCCESS"
+      "calendar": {
+        "color": 0.4,
+        "name": "Jan"
+      },
+      "duration": 14400,
+      "end": "2024-09-24T00:00:00+02:00",
+      "instance": {
+        "instance": 1,
+        "total": 3
+      },
+      "start": "2024-09-23T04:00:00+02:00",
+      "summary": "Test2"
     },
     {
-      "execution": 1727431235,
-      "name": "Home",
-      "number": 158,
-      "status": "SUCCESS"
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-23T08:45:00+02:00",
+      "instance": null,
+      "start": "2024-09-23T08:45:00+02:00",
+      "summary": "Vaatwasser"
     },
     {
-      "execution": 1725611827,
-      "name": "FundaChecker",
-      "number": 5,
-      "status": "SUCCESS"
+      "calendar": {
+        "color": 0.4,
+        "name": "Jan"
+      },
+      "duration": 86400,
+      "end": "2024-09-24",
+      "instance": {
+        "instance": 7,
+        "total": 8
+      },
+      "start": "2024-09-24",
+      "summary": "Test"
+    },
+    {
+      "calendar": {
+        "color": 0.4,
+        "name": "Jan"
+      },
+      "duration": 86400,
+      "end": "2024-09-25T00:00:00+02:00",
+      "instance": {
+        "instance": 2,
+        "total": 3
+      },
+      "start": "2024-09-24T00:00:00+02:00",
+      "summary": "Test2"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-24T08:45:00+02:00",
+      "instance": null,
+      "start": "2024-09-24T08:45:00+02:00",
+      "summary": "Vaatwasser"
+    },
+    {
+      "calendar": {
+        "color": 0.4,
+        "name": "Jan"
+      },
+      "duration": 86400,
+      "end": "2024-09-25",
+      "instance": {
+        "instance": 8,
+        "total": 8
+      },
+      "start": "2024-09-25",
+      "summary": "Test"
+    },
+    {
+      "calendar": {
+        "color": 0.4,
+        "name": "Jan"
+      },
+      "duration": 45000,
+      "end": "2024-09-25T12:30:00+02:00",
+      "instance": {
+        "instance": 3,
+        "total": 3
+      },
+      "start": "2024-09-25T00:00:00+02:00",
+      "summary": "Test2"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-25T08:45:00+02:00",
+      "instance": null,
+      "start": "2024-09-25T08:45:00+02:00",
+      "summary": "Vaatwasser"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-26T08:45:00+02:00",
+      "instance": null,
+      "start": "2024-09-26T08:45:00+02:00",
+      "summary": "Vaatwasser"
+    },
+    {
+      "calendar": {
+        "color": 0.6,
+        "name": "Anna"
+      },
+      "duration": 900,
+      "end": "2024-09-27T10:15:00+02:00",
+      "instance": null,
+      "start": "2024-09-27T10:00:00+02:00",
+      "summary": "Recept kiezen"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-27T08:45:00+02:00",
+      "instance": null,
+      "start": "2024-09-27T08:45:00+02:00",
+      "summary": "Vaatwasser"
+    },
+    {
+      "calendar": {
+        "color": 0.6,
+        "name": "Anna"
+      },
+      "duration": 3600,
+      "end": "2024-09-28T13:00:00+02:00",
+      "instance": null,
+      "start": "2024-09-28T12:00:00+02:00",
+      "summary": "Heg"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-28T08:45:00+02:00",
+      "instance": null,
+      "start": "2024-09-28T08:45:00+02:00",
+      "summary": "Vaatwasser"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-29T18:00:00+02:00",
+      "instance": null,
+      "start": "2024-09-29T18:00:00+02:00",
+      "summary": "Bin plastic"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 3600,
+      "end": "2024-09-29T14:00:00+02:00",
+      "instance": null,
+      "start": "2024-09-29T13:00:00+02:00",
+      "summary": "Living statues centrum gratis als we zin hebben tot 16:30"
+    },
+    {
+      "calendar": {
+        "color": 0.4,
+        "name": "Jan"
+      },
+      "duration": 3600,
+      "end": "2024-09-29T16:00:00+02:00",
+      "instance": null,
+      "start": "2024-09-29T15:00:00+02:00",
+      "summary": "Morgen auto onderhoud"
+    },
+    {
+      "calendar": {
+        "color": 0.6,
+        "name": "Anna"
+      },
+      "duration": 3600,
+      "end": "2024-09-29T10:00:00+02:00",
+      "instance": null,
+      "start": "2024-09-29T09:00:00+02:00",
+      "summary": "Schrijfuur"
+    },
+    {
+      "calendar": {
+        "color": 1,
+        "name": "Familie"
+      },
+      "duration": 0,
+      "end": "2024-09-29T08:45:00+02:00",
+      "instance": null,
+      "start": "2024-09-29T08:45:00+02:00",
+      "summary": "Vaatwasser"
     }
   ],
-  "last_failed_builds": [
-    {
-      "execution": 1727449140,
-      "name": "HelmCharts",
-      "number": 338,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725601435,
-      "name": "MyDownloadsClient",
-      "number": 12,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725561969,
-      "name": "ScanToPdfServer",
-      "number": 8,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725560497,
-      "name": "ScanToPdfClient",
-      "number": 3,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725303708,
-      "name": "FundaChecker",
-      "number": 3,
-      "status": "FAILURE"
-    }
-  ],
-  "last_failed_jobs": [
-    {
-      "completed": null,
-      "created": 1727136000,
-      "failed": 1,
-      "name": "version-poller-cronjob-28785600",
-      "namespace": "version-poller",
-      "succeeded": 0
-    }
-  ],
-  "nodes": [
-    {
-      "allocated_containers": 41,
-      "allocated_pods": 30,
-      "cpu_capacity": 6000000000,
-      "cpu_usage": 99323752,
-      "created": 1721215956,
-      "memory_capacity": 14305352,
-      "memory_usage": 4613400,
-      "name": "srvk8sl1"
-    },
-    {
-      "allocated_containers": 34,
-      "allocated_pods": 17,
-      "cpu_capacity": 3000000000,
-      "cpu_usage": 123477241,
-      "created": 1721232963,
-      "memory_capacity": 16370888,
-      "memory_usage": 3919348,
-      "name": "srvk8ss1"
-    },
-    {
-      "allocated_containers": 30,
-      "allocated_pods": 22,
-      "cpu_capacity": 3000000000,
-      "cpu_usage": 312759607,
-      "created": 1721232973,
-      "memory_capacity": 16370884,
-      "memory_usage": 7070972,
-      "name": "srvk8ss2"
-    },
-    {
-      "allocated_containers": 35,
-      "allocated_pods": 25,
-      "cpu_capacity": 3000000000,
-      "cpu_usage": 146498007,
-      "created": 1721233035,
-      "memory_capacity": 16370888,
-      "memory_usage": 3861560,
-      "name": "srvk8ss3"
-    }
-  ]
+  "start": "2024-09-23"
 }

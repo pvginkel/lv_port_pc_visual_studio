@@ -32,7 +32,7 @@
 
 #include "includes.h"
 
-#include "StatsUI.h"
+#include "CalendarUI.h"
 
 #if _MSC_VER >= 1200
 // Restore compilation warnings.
@@ -46,8 +46,8 @@ bool single_display_mode_initialization()
     if (!lv_win32_init(
         GetModuleHandleW(NULL),
         SW_SHOW,
-        800,
-        480,
+        1404 / 2,
+        1872 / 2,
         LoadIconW(GetModuleHandleW(NULL), MAKEINTRESOURCE(IDI_LVGL))))
     {
         return false;
@@ -55,22 +55,22 @@ bool single_display_mode_initialization()
 
     lv_win32_add_all_input_devices_to_group(NULL);
 
-    lv_disp_get_default()->driver->dpi = LV_DPI_DEF;
+    lv_disp_get_default()->driver->dpi = LV_DPI_DEF / 2;
 
     return true;
 }
 
 void setup_app()
 {
-    static StatsUI* ui;
+    static CalendarUI* ui;
 
-    ui = new StatsUI();
+    ui = new CalendarUI();
     ui->begin();
 
     stringstream buffer;
     buffer << ifstream("data.json").rdbuf();
 
-    StatsDto::from_json(buffer.str().c_str(), ui->get_stats());
+    CalendarEventsDto::from_json(buffer.str().c_str(), ui->get_data());
 
     ui->render();
 }

@@ -6,7 +6,7 @@
     <ClInclude Include="lv_conf.h" />
     <ClInclude Include="lv_drv_conf.h" />
     <ClInclude Include="..\..\..\main\Device.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
     <ClInclude Include="..\cJSON\cJSON.h">
       <Filter>cJSON</Filter>
@@ -15,31 +15,31 @@
       <Filter>cJSON</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\main\lv_support.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\main\LvglUI.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\main\lvgl_assert.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\main\Messages.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\main\StatsDto.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+    <ClInclude Include="..\..\..\main\CalendarEventsDto.h">
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\main\StatsUI.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+    <ClInclude Include="..\..\..\main\CalendarUI.h">
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\main\support.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\main\Callback.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\main\includes.h">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +52,7 @@
   <ItemGroup>
     <ClCompile Include="LVGL.Simulator.cpp" />
     <ClCompile Include="..\..\..\main\Device.cpp">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\cJSON\cJSON.c">
       <Filter>cJSON</Filter>
@@ -61,37 +61,40 @@
       <Filter>cJSON</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_support.cpp">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\LvglUI.cpp">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main\StatsDto.cpp">
-      <Filter>InfraStatisticsDisplay</Filter>
+    <ClCompile Include="..\..\..\main\CalendarEventsDto.cpp">
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main\StatsUI.cpp">
-      <Filter>InfraStatisticsDisplay</Filter>
+    <ClCompile Include="..\..\..\main\CalendarUI.cpp">
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\support.cpp">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_icons_24.c">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_medium_28.c">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_regular_28.c">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_medium_46.c">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_regular_46.c">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_icons_33.c">
-      <Filter>InfraStatisticsDisplay</Filter>
+      <Filter>CalendarDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_regular_24.c">
+      <Filter>CalendarDisplay</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -105,11 +108,11 @@
     <None Include="data.json" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="InfraStatisticsDisplay">
-      <UniqueIdentifier>{a4a78e00-8b46-4e85-94bc-3f20a49a6e7f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="cJSON">
       <UniqueIdentifier>{3749df57-adc1-40c7-842d-59fea3fb815d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalendarDisplay">
+      <UniqueIdentifier>{a4a78e00-8b46-4e85-94bc-3f20a49a6e7f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
