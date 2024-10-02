@@ -1,9 +1,33 @@
 ﻿{
   "container_starts": {
-    "day": 490,
-    "week": 1283
+    "day": 523,
+    "week": 1456
   },
   "last_builds": [
+    {
+      "execution": 1727866815,
+      "name": "HelmCharts",
+      "number": 398,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1727863660,
+      "name": "HelmCharts",
+      "number": 397,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1727863588,
+      "name": "DockerImages",
+      "number": 158,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1727851677,
+      "name": "InfraStatisticsDisplay",
+      "number": 16,
+      "status": "SUCCESS"
+    },
     {
       "execution": 1727845215,
       "name": "HelmCharts",
@@ -11,27 +35,9 @@
       "status": "SUCCESS"
     },
     {
-      "execution": 1727841620,
-      "name": "DockerImages",
-      "number": 157,
-      "status": "SUCCESS"
-    },
-    {
-      "execution": 1727620965,
-      "name": "InfraStatisticsDisplay",
-      "number": 15,
-      "status": "SUCCESS"
-    },
-    {
-      "execution": 1727514700,
-      "name": "PaperClock",
-      "number": 55,
-      "status": "SUCCESS"
-    },
-    {
-      "execution": 1727508980,
-      "name": "Home",
-      "number": 159,
+      "execution": 1727841935,
+      "name": "HelmCharts",
+      "number": 395,
       "status": "SUCCESS"
     }
   ],
@@ -65,6 +71,12 @@
       "name": "ScanToPdfClient",
       "number": 3,
       "status": "FAILURE"
+    },
+    {
+      "execution": 1725303708,
+      "name": "FundaChecker",
+      "number": 3,
+      "status": "FAILURE"
     }
   ],
   "last_failed_jobs": [
@@ -82,40 +94,40 @@
       "allocated_containers": 21,
       "allocated_pods": 10,
       "cpu_capacity": 6000000000,
-      "cpu_usage": 123483853,
+      "cpu_usage": 164949812,
       "created": 1721215956,
       "memory_capacity": 14305352,
-      "memory_usage": 4674988,
+      "memory_usage": 4504772,
       "name": "srvk8sl1"
     },
     {
       "allocated_containers": 33,
       "allocated_pods": 15,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 255283794,
+      "cpu_usage": 427035548,
       "created": 1721232963,
       "memory_capacity": 16370888,
-      "memory_usage": 4563424,
+      "memory_usage": 4604440,
       "name": "srvk8ss1"
     },
     {
       "allocated_containers": 21,
       "allocated_pods": 14,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 251412245,
+      "cpu_usage": 391524905,
       "created": 1721232973,
       "memory_capacity": 16370884,
-      "memory_usage": 6062848,
+      "memory_usage": 6142440,
       "name": "srvk8ss2"
     },
     {
       "allocated_containers": 26,
       "allocated_pods": 16,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 157120370,
+      "cpu_usage": 365554183,
       "created": 1721233035,
       "memory_capacity": 16370888,
-      "memory_usage": 3046528,
+      "memory_usage": 3123112,
       "name": "srvk8ss3"
     }
   ]
