@@ -30,6 +30,7 @@
   <Import Project="LVGL.Portable.vcxitems" />
   <Import Project="LVGL.Drivers.vcxitems" />
   <ItemGroup>
+    <ClInclude Include="..\..\..\main\Buttons.h" />
     <ClInclude Include="..\..\..\main\Callback.h" />
     <ClInclude Include="..\..\..\main\Device.h" />
     <ClInclude Include="..\..\..\main\includes.h" />
@@ -55,15 +56,15 @@
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\main\Device.cpp" />
     <ClCompile Include="..\..\..\main\LvglUI.cpp" />
-    <ClCompile Include="..\..\..\main\lv_font_icons_24.c" />
-    <ClCompile Include="..\..\..\main\lv_font_icons_33.c" />
     <ClCompile Include="..\..\..\main\lv_font_medium_28.c" />
     <ClCompile Include="..\..\..\main\lv_font_medium_46.c" />
+    <ClCompile Include="..\..\..\main\lv_font_medium_56.c" />
+    <ClCompile Include="..\..\..\main\lv_font_medium_92.c" />
     <ClCompile Include="..\..\..\main\lv_font_regular_24.c" />
     <ClCompile Include="..\..\..\main\lv_font_regular_28.c" />
-    <ClCompile Include="..\..\..\main\lv_font_regular_46.c" />
+    <ClCompile Include="..\..\..\main\lv_font_regular_44.c" />
+    <ClCompile Include="..\..\..\main\lv_font_regular_56.c" />
     <ClCompile Include="..\..\..\main\lv_support.cpp" />
     <ClCompile Include="..\..\..\main\CalendarEventsDto.cpp" />
     <ClCompile Include="..\..\..\main\support.cpp" />

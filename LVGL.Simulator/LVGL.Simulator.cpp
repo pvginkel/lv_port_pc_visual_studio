@@ -64,7 +64,7 @@ void setup_app()
 {
     static CalendarUI* ui;
 
-    ui = new CalendarUI();
+    ui = new CalendarUI(nullptr, nullptr);
     ui->begin();
 
     stringstream buffer;

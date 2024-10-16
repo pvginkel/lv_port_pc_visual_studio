@@ -41,6 +41,9 @@
     <ClInclude Include="..\..\..\main\includes.h">
       <Filter>CalendarDisplay</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\main\Buttons.h">
+      <Filter>CalendarDisplay</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LVGL.Simulator.manifest" />
@@ -51,9 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LVGL.Simulator.cpp" />
-    <ClCompile Include="..\..\..\main\Device.cpp">
-      <Filter>CalendarDisplay</Filter>
-    </ClCompile>
     <ClCompile Include="..\cJSON\cJSON.c">
       <Filter>cJSON</Filter>
     </ClCompile>
@@ -75,25 +75,28 @@
     <ClCompile Include="..\..\..\main\support.cpp">
       <Filter>CalendarDisplay</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_icons_24.c">
-      <Filter>CalendarDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_medium_28.c">
+    <ClCompile Include="..\..\..\main\lv_font_regular_24.c">
       <Filter>CalendarDisplay</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_regular_28.c">
       <Filter>CalendarDisplay</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_regular_44.c">
+      <Filter>CalendarDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_regular_56.c">
+      <Filter>CalendarDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_font_medium_28.c">
+      <Filter>CalendarDisplay</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\main\lv_font_medium_46.c">
       <Filter>CalendarDisplay</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_regular_46.c">
+    <ClCompile Include="..\..\..\main\lv_font_medium_56.c">
       <Filter>CalendarDisplay</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_icons_33.c">
-      <Filter>CalendarDisplay</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\main\lv_font_regular_24.c">
+    <ClCompile Include="..\..\..\main\lv_font_medium_92.c">
       <Filter>CalendarDisplay</Filter>
     </ClCompile>
   </ItemGroup>
