@@ -108,7 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="freetype.props" />
-    <None Include="data.json" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="cJSON">

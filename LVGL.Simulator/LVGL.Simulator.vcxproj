@@ -81,7 +81,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="freetype.props" />
-    <None Include="data.json" />
   </ItemGroup>
   <Import Project="Mile.Project.Windows.Legacy\Mile.Project.Cpp.targets" />
 </Project>

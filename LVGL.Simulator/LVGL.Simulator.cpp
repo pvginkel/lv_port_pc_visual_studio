@@ -67,8 +67,10 @@ void setup_app()
     ui = new CalendarUI(nullptr, nullptr);
     ui->begin();
 
+    system("..\\Bin\\curl.exe -H \"Authorization: Bearer changeme!\" -o ..\\Output\\data.json http://wrkdev:8080/calendar?offset=0");
+
     stringstream buffer;
-    buffer << ifstream("data.json").rdbuf();
+    buffer << ifstream("..\\Output\\data.json").rdbuf();
 
     CalendarEventsDto::from_json(buffer.str().c_str(), ui->get_data());
 
