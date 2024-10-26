@@ -24,6 +24,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <filesystem>
 
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
@@ -67,7 +68,9 @@ void setup_app()
     ui = new CalendarUI(nullptr, nullptr);
     ui->begin();
 
-    system("..\\Bin\\curl.exe -H \"Authorization: Bearer changeme!\" -o ..\\Output\\data.json http://wrkdev:8080/calendar?offset=0");
+    if (!filesystem::exists("..\\Output\\data.json")) {
+        system("..\\Bin\\curl.exe -H \"Authorization: Bearer changeme!\" -o ..\\Output\\data.json http://wrkdev:8080/calendar?offset=0");
+    }
 
     stringstream buffer;
     buffer << ifstream("..\\Output\\data.json").rdbuf();
