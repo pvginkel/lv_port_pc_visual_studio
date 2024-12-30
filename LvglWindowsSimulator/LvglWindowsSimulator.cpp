@@ -3,8 +3,8 @@
 #include <LvglWindowsIconResource.h>
 #include <Windows.h>
 
-#include "Application.h"
 #include "lvgl/lvgl.h"
+#include "ClockUI.h"
 
 int main() {
     lv_init();
@@ -50,12 +50,19 @@ int main() {
 
     _putenv("CURL_CA_BUNDLE=../Output/Binaries/Debug/x64/curl-ca-bundle.crt");
 
-    Application application(new Device());
+    Queue queue;
+    HomeAssistantApi api(&queue);
 
-    application.begin();
+    api.begin();
+
+    ClockUI clock_ui(new Device(), &api);
+
+    clock_ui.begin();
+    clock_ui.render();
 
     while (1) {
-        application.process();
+        queue.process();
+        clock_ui.update();
 
         uint32_t time_till_next = lv_timer_handler();
         Sleep(time_till_next);

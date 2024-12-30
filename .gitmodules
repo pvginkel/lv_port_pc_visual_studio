@@ -7,3 +7,6 @@
 [submodule "Mile.Project.Windows"]
 	path = Mile.Project.Windows
 	url = https://github.com/ProjectMile/Mile.Project.Windows
+[submodule "cJSON"]
+	path = cJSON
+	url = https://github.com/DaveGamble/cJSON.git

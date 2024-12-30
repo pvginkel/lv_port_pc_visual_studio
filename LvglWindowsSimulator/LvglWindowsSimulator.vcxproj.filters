@@ -929,70 +929,40 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClInclude>
     <ClInclude Include="lv_conf.h" />
-    <ClInclude Include="..\..\..\lib\cJSON\cJSON.h">
-      <Filter>cJSON</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\lib\cJSON\cJSON_Utils.h">
-      <Filter>cJSON</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\Application.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\Callback.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\Device.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\fonts.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\ClockUI.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\includes.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\lv_conf.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\lvgl_events.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\LvglUI.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\Queue.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\RefCounted.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\result.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\settings.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\support.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\Tasks.h">
-      <Filter>PaperClock</Filter>
-    </ClInclude>
     <ClInclude Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.h">
       <Filter>lvgl\src\misc\cache</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\HomeAssistantApi.h">
+    <ClInclude Include="..\cJSON\cJSON.h">
+      <Filter>cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cJSON\cJSON_Utils.h">
+      <Filter>cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\main\ClockUI.h">
       <Filter>PaperClock</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\mdi-icons.h">
+    <ClInclude Include="..\..\..\main\Device.h">
       <Filter>PaperClock</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\TestClockUI.h">
+    <ClInclude Include="..\..\..\main\HomeAssistantApi.h">
       <Filter>PaperClock</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\ShutdownUI.h">
+    <ClInclude Include="..\..\..\main\Queue.h">
+      <Filter>PaperClock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\main\includes.h">
+      <Filter>PaperClock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\main\LvglUI.h">
+      <Filter>PaperClock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\main\ttffonts.h">
+      <Filter>PaperClock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\main\support.h">
+      <Filter>PaperClock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\main\mdi-icons.h">
       <Filter>PaperClock</Filter>
     </ClInclude>
   </ItemGroup>
@@ -2870,52 +2840,34 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClCompile>
     <ClCompile Include="LvglWindowsSimulator.cpp" />
-    <ClCompile Include="..\..\..\lib\cJSON\cJSON.c">
-      <Filter>cJSON</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\cJSON\cJSON_Utils.c">
-      <Filter>cJSON</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\Application.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\Device.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\ClockUI.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\lvgl_events.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\LvglUI.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\main.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\Queue.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\support.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\Tasks.cpp">
-      <Filter>PaperClock</Filter>
-    </ClCompile>
     <ClCompile Include="..\LvglPlatform\lvgl\src\misc\cache\lv_image_header_cache.c">
       <Filter>lvgl\src\misc\cache</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\HomeAssistantApi.cpp">
+    <ClCompile Include="..\cJSON\cJSON.c">
+      <Filter>cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cJSON\cJSON_Utils.c">
+      <Filter>cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\ClockUI.cpp">
       <Filter>PaperClock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\mdi-icons.cpp">
+    <ClCompile Include="..\..\..\main\HomeAssistantApi.cpp">
       <Filter>PaperClock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\TestClockUI.cpp">
+    <ClCompile Include="..\..\..\main\Queue.cpp">
       <Filter>PaperClock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\ShutdownUI.cpp">
+    <ClCompile Include="..\..\..\main\LvglUI.cpp">
+      <Filter>PaperClock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\ttffonts.c">
+      <Filter>PaperClock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\support.cpp">
+      <Filter>PaperClock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\mdi-icons.cpp">
       <Filter>PaperClock</Filter>
     </ClCompile>
   </ItemGroup>
