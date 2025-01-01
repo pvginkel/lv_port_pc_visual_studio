@@ -368,6 +368,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClInclude Include="..\..\..\main\HomeAssistantApi.h" />
     <ClInclude Include="..\..\..\main\includes.h" />
     <ClInclude Include="..\..\..\main\LvglUI.h" />
+    <ClInclude Include="..\..\..\main\lv_support.h" />
     <ClInclude Include="..\..\..\main\mdi-icons.h" />
     <ClInclude Include="..\..\..\main\Queue.h" />
     <ClInclude Include="..\..\..\main\support.h" />
@@ -1007,6 +1008,7 @@ copy $(MSBuildThisFileDirectory)..\icu4c\lib64\*.pdb $(TargetDir)</Command>
     <ClCompile Include="..\..\..\main\ClockUI.cpp" />
     <ClCompile Include="..\..\..\main\HomeAssistantApi.cpp" />
     <ClCompile Include="..\..\..\main\LvglUI.cpp" />
+    <ClCompile Include="..\..\..\main\lv_support.cpp" />
     <ClCompile Include="..\..\..\main\mdi-icons.cpp" />
     <ClCompile Include="..\..\..\main\Queue.cpp" />
     <ClCompile Include="..\..\..\main\support.cpp" />

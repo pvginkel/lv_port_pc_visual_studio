@@ -965,6 +965,9 @@
     <ClInclude Include="..\..\..\main\mdi-icons.h">
       <Filter>PaperClock</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\main\lv_support.h">
+      <Filter>PaperClock</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -2868,6 +2871,9 @@
       <Filter>PaperClock</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\main\mdi-icons.cpp">
+      <Filter>PaperClock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\main\lv_support.cpp">
       <Filter>PaperClock</Filter>
     </ClCompile>
   </ItemGroup>
