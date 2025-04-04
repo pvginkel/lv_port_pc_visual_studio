@@ -1,134 +1,95 @@
 ﻿{
   "container_starts": {
-    "day": 523,
-    "week": 1456
+    "day": 188,
+    "week": 1564
   },
   "last_builds": [
     {
-      "execution": 1727866815,
+      "execution": 1743742834,
       "name": "HelmCharts",
-      "number": 398,
+      "number": 1293,
       "status": "SUCCESS"
     },
     {
-      "execution": 1727863660,
+      "execution": 1743739274,
       "name": "HelmCharts",
-      "number": 397,
+      "number": 1292,
       "status": "SUCCESS"
     },
     {
-      "execution": 1727863588,
+      "execution": 1743739219,
       "name": "DockerImages",
-      "number": 158,
+      "number": 592,
       "status": "SUCCESS"
     },
     {
-      "execution": 1727851677,
-      "name": "InfraStatisticsDisplay",
-      "number": 16,
-      "status": "SUCCESS"
-    },
-    {
-      "execution": 1727845215,
+      "execution": 1743714033,
       "name": "HelmCharts",
-      "number": 396,
+      "number": 1291,
       "status": "SUCCESS"
     },
     {
-      "execution": 1727841935,
+      "execution": 1743678032,
       "name": "HelmCharts",
-      "number": 395,
+      "number": 1290,
+      "status": "SUCCESS"
+    },
+    {
+      "execution": 1743656432,
+      "name": "HelmCharts",
+      "number": 1289,
       "status": "SUCCESS"
     }
   ],
-  "last_failed_builds": [
-    {
-      "execution": 1727598595,
-      "name": "HelmCharts",
-      "number": 376,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1727462910,
-      "name": "InfraStatisticsDisplay",
-      "number": 4,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725601435,
-      "name": "MyDownloadsClient",
-      "number": 12,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725561969,
-      "name": "ScanToPdfServer",
-      "number": 8,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725560497,
-      "name": "ScanToPdfClient",
-      "number": 3,
-      "status": "FAILURE"
-    },
-    {
-      "execution": 1725303708,
-      "name": "FundaChecker",
-      "number": 3,
-      "status": "FAILURE"
-    }
-  ],
+  "last_failed_builds": [],
   "last_failed_jobs": [
     {
       "completed": null,
-      "created": 1727481600,
+      "created": 1743339600,
       "failed": 1,
-      "name": "version-poller-cronjob-28791360",
+      "name": "newsfilter-cronjob-29055540",
+      "namespace": "newsfilter",
+      "succeeded": 0
+    },
+    {
+      "completed": null,
+      "created": 1743326314,
+      "failed": 1,
+      "name": "version-poller-cronjob-29055300",
       "namespace": "version-poller",
       "succeeded": 0
     }
   ],
   "nodes": [
     {
-      "allocated_containers": 21,
-      "allocated_pods": 10,
+      "allocated_containers": 18,
+      "allocated_pods": 9,
       "cpu_capacity": 6000000000,
-      "cpu_usage": 164949812,
-      "created": 1721215956,
-      "memory_capacity": 14305352,
-      "memory_usage": 4504772,
+      "cpu_usage": 628673288,
+      "created": 1721223156,
+      "memory_capacity": 14305336,
+      "memory_usage": 4226736,
       "name": "srvk8sl1"
     },
     {
-      "allocated_containers": 33,
-      "allocated_pods": 15,
+      "allocated_containers": 38,
+      "allocated_pods": 22,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 427035548,
-      "created": 1721232963,
-      "memory_capacity": 16370888,
-      "memory_usage": 4604440,
+      "cpu_usage": 941799821,
+      "created": 1721240163,
+      "memory_capacity": 16370868,
+      "memory_usage": 5202272,
       "name": "srvk8ss1"
     },
     {
-      "allocated_containers": 21,
-      "allocated_pods": 14,
+      "allocated_containers": 34,
+      "allocated_pods": 18,
       "cpu_capacity": 3000000000,
-      "cpu_usage": 391524905,
-      "created": 1721232973,
-      "memory_capacity": 16370884,
-      "memory_usage": 6142440,
+      "cpu_usage": 818133685,
+      "created": 1721240173,
+      "memory_capacity": 16370864,
+      "memory_usage": 3156392,
       "name": "srvk8ss2"
-    },
-    {
-      "allocated_containers": 26,
-      "allocated_pods": 16,
-      "cpu_capacity": 3000000000,
-      "cpu_usage": 365554183,
-      "created": 1721233035,
-      "memory_capacity": 16370888,
-      "memory_usage": 3123112,
-      "name": "srvk8ss3"
     }
   ]
 }
