@@ -69,7 +69,9 @@
       "created": 1721223156,
       "memory_capacity": 14305336,
       "memory_usage": 4226736,
-      "name": "srvk8sl1"
+      "name": "srvk8sl1",
+      "ready": true,
+      "cordoned": false
     },
     {
       "allocated_containers": 38,
@@ -79,7 +81,9 @@
       "created": 1721240163,
       "memory_capacity": 16370868,
       "memory_usage": 5202272,
-      "name": "srvk8ss1"
+      "name": "srvk8ss1",
+      "ready": false,
+      "cordoned": false
     },
     {
       "allocated_containers": 34,
@@ -89,7 +93,9 @@
       "created": 1721240173,
       "memory_capacity": 16370864,
       "memory_usage": 3156392,
-      "name": "srvk8ss2"
+      "name": "srvk8ss2",
+      "ready": true,
+      "cordoned": true
     }
   ]
 }
